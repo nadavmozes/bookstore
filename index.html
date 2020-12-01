@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/fav.ico">
+    <title>La Biblioteca</title>
+</head>
+
+<body onload="onInit()">
+
+    <h1>Donde Esta La Biblioteca?</h1>
+    <section class="add-book">
+        <h3>Create New Book</h3>
+        <label for="new-book">Book Name</label>
+        <input type="text" id="new-book" name="newbook" placeholder="Write book's name">
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price" placeholder="Add price">
+        <label for="image">Image</label>
+        <input type="text" id="imgurl" name="image" placeholder="Image Url">
+        <button onclick="onAddBook()">Save</button>
+    </section>
+    </div>
+    <table class="books-table">
+        <thead>
+            <th>Id</th>
+            <th class="td-title">Title</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </thead>
+        <tbody class="books-table-body">
+        </tbody>
+    </table>
+    <div class="modal" hidden>
+        <h5></h5>
+        <h6></h6>
+        <h3></h3>
+        <p></p>
+        <a></a>
+        <br />
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/bookshop-service.js"></script>
+    <script src="js/bookshop-controller.js"></script>
+</body>
+
+</html>
